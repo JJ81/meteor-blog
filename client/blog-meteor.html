@@ -1,0 +1,50 @@
+<head>
+    <title>Clipplr, make better world together.</title>
+</head>
+
+<body>
+    <div class="header">
+        {{> login}}
+    </div>
+    <div class="container">
+        <h1>Welcome to Meteor!</h1>
+        <p>{{> welcomePage}}</p>
+        <p>{{> hello }}</p>
+    </div>
+
+</body>
+
+
+
+<!-- ############### Start Template ################ -->
+<!-- template을 만들어서 DOM 컴파일 하여 삽입한다  -->
+
+<template name="welcomePage">
+    <!--<button>Click Me(!)</button>-->
+    <!--<p>You've pressed the button {{counter}} times.</p>-->
+    <p>Welcome to our blog!!</p>
+</template>
+
+<template name="hello">
+    <button>Click Me(!)</button>
+    <p>You've pressed the button {{counter}} times.</p>
+    <ol>
+    {{#each people}}
+        <li>{{name}}</li>
+    {{/each}}
+    </ol>
+    {{username}}
+</template>
+
+
+<template name="login">
+    {{#if currentUser}}
+        {{currentUser.services.facebook.name}} -
+        {{currentUser.services.facebook.gender}}
+        <button id="logout">Logout</button>
+    {{else}}
+        <button id="facebook-login" class="btn btn-default"> Login with Facebook</button>
+    {{/if}}
+</template>
+
+<!-- ############### End Template ################ -->
