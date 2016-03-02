@@ -1,0 +1,34 @@
+{
+  "name": "meteor-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blog-meteor.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^1.12.9",
+    "webpack-hot-middleware": "^2.4.1",
+    "style-loader": "^0.13.0",
+    "css-loader": "^0.23.0",
+    "sass-loader": "^3.1.2",
+    "node-sass": "^3.4.2",
+    "url-loader": "^0.5.7",
+    "file-loader": "^0.8.5",
+    "extract-text-webpack-plugin": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://JJ81@github.com/JJ81/meteor-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJ81/meteor-blog/issues"
+  },
+  "homepage": "https://github.com/JJ81/meteor-blog#readme"
+}
