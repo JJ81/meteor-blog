@@ -13,7 +13,7 @@ if (Meteor.isClient) {
         counter: function () {
             return Session.get('counter');
         },
-        people: [{name: "Bob"}, {name: "Frank"}, {name: "Alice"}]
+        people: [{ name: "Bob" }, { name: "Frank" }, { name: "Alice" }]
         //username: function () {
         //    return Meteor.user() && Meteor.user().username;
         //}
@@ -26,7 +26,6 @@ if (Meteor.isClient) {
             Session.set('counter', Session.get('counter') + 1);
         }
     });
-
 
     Template.login.events({
         'click #facebook-login': function (event) {
@@ -42,19 +41,16 @@ if (Meteor.isClient) {
                 if (err) {
                     throw new Meteor.Error("Logout failed");
                 }
-            })
+            });
         }
     });
-
-
 } // End Client Code
-
 
 if (Meteor.isServer) {
     Meteor.startup(function () {
         // code to run on server at startup
         console.info('[info] server starting...');
     });
-
-
 } // End Server Code
+
+//# sourceMappingURL=blog-meteor-compiled.js.map
