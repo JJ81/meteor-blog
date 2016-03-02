@@ -1,15 +1,24 @@
 <head>
-  <title>Clipplr, make better world together.</title>
+    <title>Clipplr, make better world together.</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+    <h1>Welcome to Meteor!</h1>
+    {{> welcomePage}}
+    {{> welcomePage}}
+
 </body>
 
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+
+<!-- ############### Start Template ################ -->
+<!-- template을 만들어서 DOM 컴파일 하여 삽입한다  -->
+
+<template name="welcomePage">
+    <!--<button>Click Me(!)</button>-->
+    <!--<p>You've pressed the button {{counter}} times.</p>-->
+    <p>Welcome to our blog!!</p>
 </template>
+
+<!-- ############### End Template ################ -->
